@@ -6,6 +6,7 @@ As the number of recorded meetings increases, it becomes increasingly important 
 
 ## Acknowledgement
 Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu
+
 In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
 
 
