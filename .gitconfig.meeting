@@ -1,0 +1,9 @@
+[user]
+email = huye.software@gmail.com
+name = meetingbank
+
+[github]
+user = "meetingbank"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/meeting"
