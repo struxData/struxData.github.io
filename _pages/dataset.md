@@ -50,12 +50,14 @@ Each meeting is saved as dictionary:
 ```
  **meeting ID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
  
+
  **URLs** (dictionary) :
  - **Webpage** (string) : Link to meeting web page.
 
  - **Video** (string): Link to access or download video.
 
  - **MeetingDetail** (string) : Link to agenda items of current meeting.
+
 
  **itemInfo** (dictionary) : Includes all meeting items and related discussion segments.
  - **itemID** (string) : The ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
