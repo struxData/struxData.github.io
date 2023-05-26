@@ -105,7 +105,7 @@ For abstrcative summaries, we provide model generated summaries from 7 best perf
 
 #### 4. Human Evaluation
 
-We evaluate the performance of seven state-of-the-art summarization systems, including fine-tuned abstractive models **HMNet**, **BART**, **Pegasus**, **DialogLM**, **GPT-3** with prompting, and traditional extractive models **LexRank** and **LEAD** to best assess the effectiveness of system-generated meeting summaries. All abstractive models have been fine-tuned on the train split of our city councils dataset to achieve the best possible results.
+We evaluate the performance of seven state-of-the-art summarization systems, including fine-tuned abstractive models **HMNet**, **BART**, **Pegasus**, **DialogLM**, **Longformer** and **GPT-3** with prompting, and traditional extractive models **LexRank** and **LEAD** to best assess the effectiveness of system-generated meeting summaries. All abstractive models have been fine-tuned on the train split of our city councils dataset to achieve the best possible results.
 
 The workers are asked to watch a video segment, typically 30 minutes or less, read the transcript, and then evaluate the quality of each system summary based on five criteria: ***informativeness***, ***factuality***, ***fluency***, ***coherence***, and ***redundancy***.
 
