@@ -70,7 +70,7 @@ Each meeting is saved as dictionary:
  - **endTime** (int) : Segment end time in the meeting.
 
  - **duration** (int) : Length of each meeting segments.
- 
+
 
 #### 2. Splits for training and evaluating summarizers perfomance
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
@@ -79,7 +79,6 @@ Each meeting is saved as dictionary:
     <img src="/assets/data splits.png" alt="interface" width="760">
       <br>
 </p>
-
 
 #### 3. Abs&Ext Summaries
 We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
