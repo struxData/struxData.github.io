@@ -51,16 +51,14 @@ Each meeting is saved as dictionary:
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
 
 |train | test| dev|
-|:-----|:-----|:-----|
+|-----|-----|-----|
 |5169|861|862|
 
 
 #### Abs&Ext Summaries
 We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
 For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
-As for abstrcative summaries, we provide five best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet, 
-
-## Data Splits
+As for abstrcative summaries, we provide five summaries from best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet.
 
 ## Reproducibility
 
