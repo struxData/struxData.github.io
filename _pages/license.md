@@ -6,11 +6,11 @@ description:
 nav: true
 nav_order: 3
 ---
-The PodcastFillers dataset has separate licenses for the audio data and for the metadata. The metadata includes all annotations, speech-to-text transcriptions, and model outputs including VAD activations and FillerNet classification predictions.
+The MeetingBank dataset has separate licenses for the audio data and for the metadata. The metadata includes all annotations, speech-to-text transcriptions, and model outputs.
 
-NOTE: PodcastFillers is provided for research purposes only. The metadata license prohibits commericial use, which in turn prohibits deploying technology developed using the PodcastFillers metadata (such as the CSV annotations or audio clips extracted based on these annotations) in commerical applications.
+NOTE: MeetingBank is provided for research purposes only. The metadata license prohibits commericial use, which in turn prohibits deploying technology developed using the MeetingBank metadata (such as the CSV annotations or audio clips extracted based on these annotations) in commerical applications.
 
-## License for PodcastFillers Dataset metadata
+## License for MeetingBank Dataset metadata
 
 This license agreement (the “License”) between Adobe Inc., having a place of business at 345 Park Avenue, San Jose, California 95110-2704 (“Adobe”), and you, the individual or entity exercising rights under this License (“you” or “your”), sets forth the terms for your use of certain research materials that are owned by Adobe (the “Licensed Materials”). By exercising rights under this License, you accept and agree to be bound by its terms. If you are exercising rights under this License on behalf of an entity, then “you” means you and such entity, and you (personally) represent and warrant that you (personally) have all necessary authority to bind that entity to the terms of this License.
 
@@ -27,6 +27,4 @@ This license agreement (the “License”) between Adobe Inc., having a place of
 5.3	Sections 2 (Ownership and Attribution), 3 (Disclaimer of Warranties), 4 (Limitation of Liability) will survive termination of this License.
 
 
-## License for PodcastFillers Dataset audio files
-
-All of the podcast episode audio files come from SoundCloud. Please see podcast_episode_license.csv (included in the dataset) for a detailed license info for each episode. They include CC-BY-3.0, CC-BY-SA 3.0 and CC-BY-ND-3.0 licenses.
+## License for MeetingBank Dataset audio files
