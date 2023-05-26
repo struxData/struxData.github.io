@@ -38,6 +38,7 @@ Splitted meeting segments from city council meetings. Each meeting segments alon
 Each meeting is saved as dictionary:
 
 ```
+<meeting ID>:
 {   
     "URLs":{"Webpage":(str), "Video":(str), "MeetingDetail":(str)}, 
     "VideoDuration":(int), # Total meeting duration(sec)
@@ -46,8 +47,18 @@ Each meeting is saved as dictionary:
     {"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
 }
 ```
-
-'itemID' is the ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
+- **meeting ID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
+- **URLs**
+- - **Webpage** (string) : Link to meeting web page.
+- - **Video** (string): Link to access or download video.
+- - **MeetingDetail** (string) : Link to agenda items of current meeting.
+- **itemInfo** (dictionary) : Includes all meeting items and related discussion segments.
+- - **itemID** (string) : The ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
+- - **Summary** (string): Reference-summary to summarize meeting segments.
+- - **transcripts** (dictionary) : Text transcripts for each selected segments.
+- - **type** (string) : Item type parsed from the city conucil agendas. Includes but limit to 'Ordinance', 'Clerk File', 'Agenda Item', 'Motion' and 'Resolution'.
+- - **startTime** (int) : Segment start time in the meeting.
+- - **endTime** (int) : Segment end time in the meeting.
 
 #### 2. Splits for training and evaluating summarizers perfomance
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
@@ -64,8 +75,8 @@ We evaluate state-of-the-art summarization systems on city council meetings, foc
 For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
 As for abstrcative summaries, we provide five summaries from best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet.
 
-#### 5. Speech-to-text meeting video transcripts
-Speech transcript in JSON format for each podcast episode. Generated using the [SpeechMatics STT](https://www.speechmatics.com/). Filename format: `{show name}_{episode name}.json`. 
+#### 4. Speech-to-text meeting video transcripts
+We use [Speechmatics.com](Speechmatics.com)'s speech-to-text API to automatically transcribe 3,579 hours of meetings, an order of magnitude larger than existing datasets. Our transcripts include word-level time alignment, casing, punctuation, and speaker diarization. . Filename format: `{audio_name}.json`. 
 
 Each word in the transcript is annotated as a dictionary:
 ```
