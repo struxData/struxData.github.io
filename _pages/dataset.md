@@ -11,7 +11,7 @@ nav_order: 2
 The release MeetingBank dataset includes 1,366 meetings from six cities or municipalities spanning over a decade, including [Seattle, Washington](https://seattle.legistar.com/Calendar.aspx); [King County, Washington](https://mkcclegisearch.kingcounty.gov/Calendar.aspx); [Denver, Colorado](https://denver.legistar.com/Calendar.aspx); [Boston, Massachusetts](https://boston.legistar.com/Calendar.aspx); [Alameda, California](https://alameda.legistar.com/Calendar.aspx); and [Long Beach, California](https://longbeach.legistar.com/DepartmentDetail.aspx?ID=2474&GUID=28A20A62-2645-436E-B1E5-1D5D9B9D25EB&Mode=MainBody).
 
 ## Dataset
-'''
+```
 .
 ├── LICENSE_ANNOTATIONS_ADOBE_RESEARCH_LICENSE.txt
 ├── LICENSE_AUDIO.csv
@@ -29,23 +29,26 @@ The release MeetingBank dataset includes 1,366 meetings from six cities or munic
     ├── Boston
     ├── Alameda
     └── LongBeach
-'''
+```
+
 ### Metadata:
 #### MeetingBank.json
 Splitted meeting segments from city council meetings. Each meeting segments along with a reference summary, transcripts and item type. We also release all URLs resources of meeting videos and agendas.
 Each meeting is saved as dictionary:
 
-'''
+```
 {   
     "URLs":{"Webpage":(str), "Video":(str), "MeetingDetail":(str)}, 
     "VideoDuration":(int), # Total meeting duration(sec)
     "Transcripts":(str) # Related transcripts file name
     "itemInfo":{<itemID>:{"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
 }
-'''
+```
+
 <itemID> is the ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
 
 #### Splits for training and evaluating summarizers perfomance
+
 |train | test| dev|
 |:-----|:-----|:-----|
 |5169|861|862|
