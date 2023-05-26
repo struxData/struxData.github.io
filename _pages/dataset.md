@@ -33,6 +33,7 @@ Tree structure of downloaded MeetingBank
 ```
 
 ### Metadata:
+
 #### 1. MeetingBank.json
 Splitted meeting segments from city council meetings. Each meeting segments along with a reference summary, transcripts and item type. We also release all URLs resources of meeting videos and agendas.
 Each meeting is saved as dictionary:
@@ -81,11 +82,13 @@ Each meeting is saved as dictionary:
 </p>
 
 #### 3. Abs&Ext Summaries
+
 We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
 For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
 As for abstrcative summaries, we provide five summaries from best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet.
 
 #### 4. Speech-to-text meeting video transcripts
+
 We use [Speechmatics.com](Speechmatics.com)'s speech-to-text API to automatically transcribe 3,579 hours of meetings, an order of magnitude larger than existing datasets. Our transcripts include word-level time alignment, casing, punctuation, and speaker diarization. . Filename format: `{audio_name}.json`. 
 
 Each word in the transcript is annotated as a dictionary:
