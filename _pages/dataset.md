@@ -48,13 +48,17 @@ Each meeting is saved as dictionary:
 'itemID' is the ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
 
 #### Splits for training and evaluating summarizers perfomance
+ We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
+
 |train | test| dev|
 |:-----|:-----|:-----|
 |5169|861|862|
 
 
-### Statistical Analysis
-
+#### Abs&Ext Summaries
+We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
+For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
+As for abstrcative summaries, we provide five best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet, 
 
 ## Data Splits
 
