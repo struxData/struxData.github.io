@@ -79,7 +79,7 @@ Each meeting is saved as dictionary:
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
 
 <p align="center">
-    <img src="/assets/data splits.png" alt="interface" width="760">
+    <img src="/assets/data splits.png" alt="interface" width="400" height="100">
       <br>
 </p>
 
