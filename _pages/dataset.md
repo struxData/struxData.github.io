@@ -48,18 +48,29 @@ Each meeting is saved as dictionary:
 }
 ```
  **meeting ID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
+ 
  **URLs**
  - **Webpage** (string) : Link to meeting web page.
+
  - **Video** (string): Link to access or download video.
+
  - **MeetingDetail** (string) : Link to agenda items of current meeting.
+
  **itemInfo** (dictionary) : Includes all meeting items and related discussion segments.
  - **itemID** (string) : The ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
+
  - **Summary** (string): Reference-summary to summarize meeting segments.
+
  - **transcripts** (dictionary) : Text transcripts for each selected segments.
+
  - **type** (string) : Item type parsed from the city conucil agendas. Includes but limit to 'Ordinance', 'Clerk File', 'Agenda Item', 'Motion' and 'Resolution'.
+
  - **startTime** (int) : Segment start time in the meeting.
+
  - **endTime** (int) : Segment end time in the meeting.
+
  - **duration** (int) : Length of each meeting segments.
+ 
 
 #### 2. Splits for training and evaluating summarizers perfomance
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
@@ -68,7 +79,6 @@ Each meeting is saved as dictionary:
     <img src="/assets/data splits.png" alt="interface" width="760">
       <br>
 </p>
-
 
 
 #### 3. Abs&Ext Summaries
