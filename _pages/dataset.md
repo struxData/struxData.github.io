@@ -50,7 +50,7 @@ Each meeting is saved as dictionary:
 ```
  **meeting ID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
  
- **URLs**
+ **URLs** (dictionary) :
  - **Webpage** (string) : Link to meeting web page.
 
  - **Video** (string): Link to access or download video.
