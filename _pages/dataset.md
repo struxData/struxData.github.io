@@ -39,7 +39,7 @@ Splitted meeting segments from city council meetings. Each meeting segments alon
 Each meeting is saved as dictionary:
 
 ```
-<meeting ID>:
+<MeetingID>:
 {   
     "URLs":{"Webpage":(str), "Video":(str), "MeetingDetail":(str)}, 
     "VideoDuration":(int), # Total meeting duration(sec)
@@ -48,7 +48,7 @@ Each meeting is saved as dictionary:
     {"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
 }
 ```
- **meeting ID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
+ **MeetingID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
  
 
  **URLs** (dictionary) :
@@ -82,6 +82,17 @@ Each meeting is saved as dictionary:
     <img src="/assets/data splits.png" alt="interface" width="760">
       <br>
 </p>
+
+
+The structure of data entry in split dataset
+
+```
+    {"id": (str), "source": (str), "summary": (str)}
+```
+**id** : In format of {MeetindID}_{itemID}.
+**source** : Processed transcripts and each turns have been consolidated into one single paragraph.
+**summary** : Reference summary.
+
 
 #### 3. Abs&Ext Summaries
 
