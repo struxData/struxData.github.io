@@ -33,7 +33,7 @@ Tree structure of downloaded MeetingBank
 ```
 
 ### Metadata:
-#### MeetingBank.json
+#### 1. MeetingBank.json
 Splitted meeting segments from city council meetings. Each meeting segments along with a reference summary, transcripts and item type. We also release all URLs resources of meeting videos and agendas.
 Each meeting is saved as dictionary:
 
@@ -42,34 +42,29 @@ Each meeting is saved as dictionary:
     "URLs":{"Webpage":(str), "Video":(str), "MeetingDetail":(str)}, 
     "VideoDuration":(int), # Total meeting duration(sec)
     "Transcripts":(str) # Related transcripts file name
-    "itemInfo":{<itemID>:{"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
+    "itemInfo":{<itemID>: \ 
+    {"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
 }
 ```
 
 'itemID' is the ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
 
-#### Splits for training and evaluating summarizers perfomance
+#### 2. Splits for training and evaluating summarizers perfomance
  We split our dataset into train, validation and test sets, containing 5169, 861, 862 instances respectively. Each summarizer is given the transcript of a meeting segment and tasked with generating a concise summary. 
 
-|train | test| dev|
-|-----|-----|-----|
-|5169|861|862|
+<p align="center">
+    <img src="/assets/data splits.png" alt="interface" width="760">
+      <br>
+</p>
 
 
-#### Abs&Ext Summaries
+
+#### 3. Abs&Ext Summaries
 We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
 For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
 As for abstrcative summaries, we provide five summaries from best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet.
 
-## Reproducibility
-
-
-## Dataset
-
-PodcastFillers dataset contains audio files and metadata. Tree structure of the PodcastFillers dataset:
-
-### Metadata:
-##### 1. Speech-to-text meeting video transcripts
+#### 5. Speech-to-text meeting video transcripts
 Speech transcript in JSON format for each podcast episode. Generated using the [SpeechMatics STT](https://www.speechmatics.com/). Filename format: `{show name}_{episode name}.json`. 
 
 Each word in the transcript is annotated as a dictionary:
@@ -77,5 +72,4 @@ Each word in the transcript is annotated as a dictionary:
 {“confidence”:(float), “duration”:(int),  “offset”:(int),  “text”:(string)}
 ```
 where “confidence” indicates the STT confidence in the prediction, “duration” (unit:microsecond or 1e-6 second) is the duration of the transcribed word, “offset” (unit:microsecond or 1e-6 second) is the start time of the transcribed word in the full-length recording.
-
-##### 2. MeetingBank.csv
+<!-- ## Reproducibility -->
