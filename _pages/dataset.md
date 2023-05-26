@@ -48,8 +48,8 @@ Each meeting is saved as dictionary:
     {"Summary", "transcripts", "type", "startTime", "endTime", "duration"}}
 }
 ```
+
  **MeetingID**: {CityName}_{MeetingDate}. Eg: ***SeattleCityCouncil_12142015***
- 
 
  **URLs** (dictionary) :
  - **Webpage** (string) : Link to meeting web page.
@@ -83,12 +83,12 @@ Each meeting is saved as dictionary:
       <br>
 </p>
 
-
 The structure of data entry in split dataset
 
 ```
     {"id": (str), "source": (str), "summary": (str)}
 ```
+
 **id** : In format of {MeetindID}_{itemID}.
 
 **source** : Processed transcripts and each turns have been consolidated into one single paragraph.
@@ -99,10 +99,20 @@ The structure of data entry in split dataset
 #### 3. Abs&Ext Summaries
 
 We evaluate state-of-the-art summarization systems on city council meetings, focusing on segments of the meetings rather than entire transcripts due to the length constraint imposed by abstractive summarizers.
-For extractive summaries, our method included the Oracle, LEAD, LexRank and TextRank. 
-As for abstrcative summaries, we provide five summaries from best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM and HMNet.
 
-#### 4. Speech-to-text meeting video transcripts
+For abstrcative summaries, we provide model generated summaries from 7 best performing neural abstractive summarizers. Including BART-Large, Pegasus, Longformer, DialogLM, HMNet and GPT-3 with zero-shot prompt. As for extractive summaries, we provide outputs by LEAD-3, Oracle and Lexrank algorithms. 
+
+
+#### 4. Human Evaluation
+
+We evaluate the performance of seven state-of-the-art summarization systems, including fine-tuned abstractive models **HMNet**, **BART**, **Pegasus**, **DialogLM**, **GPT-3** with prompting, and traditional extractive models **LexRank** and **LEAD** to best assess the effectiveness of system-generated meeting summaries. All abstractive models have been fine-tuned on the train split of our city councils dataset to achieve the best possible results.
+
+The workers are asked to watch a video segment, typically 30 minutes or less, read the transcript, and then evaluate the quality of each system summary based on five criteria: ***informativeness***, ***factuality***, ***fluency***, ***coherence***, and ***redundancy***.
+
+
+
+
+#### 5. Speech-to-text meeting video transcripts
 
 We use [Speechmatics.com](Speechmatics.com)'s speech-to-text API to automatically transcribe 3,579 hours of meetings, an order of magnitude larger than existing datasets. Our transcripts include word-level time alignment, casing, punctuation, and speaker diarization. . Filename format: `{audio_name}.json`. 
 
