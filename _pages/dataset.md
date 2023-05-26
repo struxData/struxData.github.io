@@ -48,11 +48,11 @@ Each meeting is saved as dictionary:
 'itemID' is the ID of disccused items. For example, "CB 118549" is an Ordinance item ID from the City of Seattle. 
 
 #### Splits for training and evaluating summarizers perfomance
-```
 |train | test| dev|
 |:-----|:-----|:-----|
 |5169|861|862|
-```
+
+
 ### Statistical Analysis
 
 
