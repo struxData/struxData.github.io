@@ -90,7 +90,9 @@ The structure of data entry in split dataset
     {"id": (str), "source": (str), "summary": (str)}
 ```
 **id** : In format of {MeetindID}_{itemID}.
+
 **source** : Processed transcripts and each turns have been consolidated into one single paragraph.
+
 **summary** : Reference summary.
 
 
