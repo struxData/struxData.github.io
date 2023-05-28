@@ -9,9 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dataset | PodcastFillers Dataset</title>
+    <title>Dataset | MeetingBank Dataset</title>
     <meta name="author" content="Adobe  Research" />
-    <meta name="description" content="PodcastFillers dataset contain audio files and metadata." />
+    <meta name="description" content="MeetingBank dataset contain audio files and metadata." />
     <meta name="keywords" content="Fillers, speech disfluencies" />
 
 
@@ -53,7 +53,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000//">PodcastFillers Dataset</a>
+          <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000//">MeetingBank Dataset</a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -105,11 +105,11 @@
 
           <header class="post-header">
             <h1 class="post-title">Dataset</h1>
-            <p class="post-description">PodcastFillers dataset contain audio files and metadata.</p>
+            <p class="post-description">MeetingBank dataset contain audio files and metadata.</p>
           </header>
 
           <article>
-            <p>Tree structure of the PodcastFillers dataset:</p>
+            <p>Tree structure of the MeetingBank dataset:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
 ├── LICENSE_ANNOTATIONS_ADOBE_RESEARCH_LICENSE.txt
@@ -120,7 +120,7 @@
 │   ├── episode_mp3
 │   └── episode_wav
 └── metadata
-    ├── PodcastFillers.csv
+    ├── MeetingBank.csv
     ├── episode_annotations
     ├── episode_sed_eval_paper
     ├── episode_transcripts
@@ -143,7 +143,7 @@
 
 <p>Filename format: <code class="language-plaintext highlighter-rouge">{pfID}-{fullvoc label}.wav</code> where:</p>
 
-<p><code class="language-plaintext highlighter-rouge">{pfID}</code> = the PodcastFillers ID of the audio clip (see metadata below)<br>
+<p><code class="language-plaintext highlighter-rouge">{pfID}</code> = the MeetingBank ID of the audio clip (see metadata below)<br>
 <code class="language-plaintext highlighter-rouge">{fullvoc label}</code> = full-vocabulary label (see <a href="/annotations/">Annotations</a> for details)</p>
 
 <h2 id="metadata">Metadata:</h2>
@@ -155,7 +155,7 @@
 </code></pre></div></div>
 <p>where “confidence” indicates the STT confidence in the prediction, “duration” (unit:microsecond or 1e-6 second) is the duration of the transcribed word, “offset” (unit:microsecond or 1e-6 second) is the start time of the transcribed word in the full-length recording.</p>
 
-<h4 id="2-podcastfillerscsv">2. PodcastFillers.csv</h4>
+<h4 id="2-MeetingBankcsv">2. MeetingBank.csv</h4>
 <p>This is the dataset’s main annotation file, and contains the annotations of all 85,803 manually annotated events. Each annotated event also corresponds to one pre-processed audio clip. For each annotated event / audio clip, we provide:</p>
 
 <ul>
@@ -163,7 +163,7 @@
     <p><strong>clip_name</strong> (str): The filename of the audio clip containing this event: <code class="language-plaintext highlighter-rouge">{pfID}_{fullvoc label}.wav</code></p>
   </li>
   <li>
-    <p><strong>pfID</strong> (str): The PodcastFillers 5-digit ID of the clip/event, a unique identifier.</p>
+    <p><strong>pfID</strong> (str): The MeetingBank 5-digit ID of the clip/event, a unique identifier.</p>
   </li>
   <li>
     <p><strong>fullvoc_label</strong> (str): The full-vocabulary label for this audio event, one of “Uh”, “Um”, “You know”, “Like”, “Other”, “Laughter”, “Breath”, “Agree”, “Words”, “Repetitions”, “Overlap”, “Music” and “Noise”. See <a href="/annotations/">Annotations</a> for details.</p>
@@ -211,7 +211,7 @@
 
 <h4 id="3-per-episode-csv-files">3. Per-episode csv files</h4>
 
-<p>These files have the exact same format as PodcastFillers.csv, but only contain the audio events for a specific podcast episode. There’s one file per episode. Filename format:  <code class="language-plaintext highlighter-rouge">{show name}_{episode name}.csv</code></p>
+<p>These files have the exact same format as MeetingBank.csv, but only contain the audio events for a specific podcast episode. There’s one file per episode. Filename format:  <code class="language-plaintext highlighter-rouge">{show name}_{episode name}.csv</code></p>
 
 <h4 id="4-vad-activation-csv-files">4. VAD activation csv files</h4>
 

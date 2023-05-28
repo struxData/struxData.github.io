@@ -23,22 +23,20 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 
 ### Bibtex
 ```
-@inproceedings{
+@inproceedings{hu-etal-2023-meetingbank,
+    title = "MeetingBank: A Benchmark Dataset for Meeting Summarization",
+    author = "Yebowen Hu and Tim Ganter and Hanieh Deilamsalehy and Franck Dernoncourt and Hassan Foroosh and Fei Liu",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = July,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
 }
 ```
 
 ## Download
 
 MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
-<!-- 
-To unzip the split compressed files, for Mac/Linux users: please use the following command line:
-```
-zip -FF MeetingBank.zip --out MeetingBank-full.zip
-unzip MeetingBank-full.zip
-```
-
-For Windows users, simply unzip `MeetingBank.zip` with WinRAR. -->
-
 
 **The download link will be available at**: [zenodo]()
 
