@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: MeetingBank Dataset # the website title (if blank, full name will be used instead)
-first_name: Adobe
+first_name: 
 middle_name:
-last_name: Research
+last_name: 
 email: huye@knights.ucf.edu
 description: MeetingBank Dataset Homepage
 footer_text: >
