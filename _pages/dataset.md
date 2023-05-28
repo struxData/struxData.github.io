@@ -14,9 +14,8 @@ The release MeetingBank dataset includes 1,366 meetings from six cities or munic
 Tree structure of downloaded MeetingBank
 ```
 .
-├── LICENSE_ANNOTATIONS_ADOBE_RESEARCH_LICENSE.txt
-├── LICENSE_AUDIO.csv
-├── README.txt
+├── LICENSE.txt
+├── README.md
 ├── Metadata
 │   ├── MeetingBank.json
 │   ├── Splits
