@@ -21,7 +21,8 @@ Please cite the following paper in work that makes use of this dataset:
 Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
 In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
 
-### Bibtex
+
+## Bibtex
 ```
 @inproceedings{hu-etal-2023-meetingbank,
     title = "MeetingBank: A Benchmark Dataset for Meeting Summarization",

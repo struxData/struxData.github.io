@@ -108,6 +108,18 @@ We evaluate the performance of seven state-of-the-art summarization systems, inc
 
 The workers are asked to watch a video segment, typically 30 minutes or less, read the transcript, and then evaluate the quality of each system summary based on five criteria: ***informativeness***, ***factuality***, ***fluency***, ***coherence***, and ***redundancy***.
 
+Each example in the human evaluation results is saved as a dictionary:
+```
+{<meetingID> :{
+    <system_name>: {
+        "summary":(string), 
+        "informativeness":(list), 
+        "consistency":(list), 
+        "fluency":(list), 
+        "coherence":(list), 
+        "redundancy":(list)}}
+}
+```
 
 #### 5. Speech-to-text meeting video transcripts
 
@@ -118,4 +130,7 @@ Each word in the transcript is annotated as a dictionary:
 {“confidence”:(float), “duration”:(int),  “offset”:(int),  “text”:(string)}
 ```
 where “confidence” indicates the STT confidence in the prediction, “duration” (unit:microsecond or 1e-6 second) is the duration of the transcribed word, “offset” (unit:microsecond or 1e-6 second) is the start time of the transcribed word in the full-length recording.
-<!-- ## Reproducibility -->
+
+#### 6. Reproducibility
+
+Some scripts can be found in github repo [MeetingBank](https://github.com/YebowenHu/MeetingBank-utils)
