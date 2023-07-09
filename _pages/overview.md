@@ -35,12 +35,12 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 }
 ```
 
-## Download
+## Resources
 
-MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
+MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting will be hosted individually on Huggingface. All resources will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
-**Summary, Segments Transcripts and Video List**: [zenodo](https://zenodo.org/record/7983743)
+**Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7983743)
 
-**Meeting Audio Files**: [HuggingFace Dataset](https://huggingface.co/datasets/huuuyeah/MeetingBank)
+**Meeting Audios**: [HuggingFace](https://huggingface.co/datasets/huuuyeah/MeetingBank)
 
 Some scripts can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
