@@ -39,7 +39,7 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 
 MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting will be hosted individually on Huggingface. All resources will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
-**Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7983743)
+**Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7989108)
 
 **Meeting Audios**: [HuggingFace](https://huggingface.co/datasets/huuuyeah/MeetingBank)
 
