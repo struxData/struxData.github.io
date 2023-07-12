@@ -41,6 +41,6 @@ MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting wi
 
 **Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7989108)
 
-**Meeting Audios**: [HuggingFace](https://huggingface.co/datasets/huuuyeah/MeetingBank)
+**Meeting Audios**: [HuggingFace](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio)
 
 Some scripts can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
