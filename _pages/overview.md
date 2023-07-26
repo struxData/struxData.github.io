@@ -42,6 +42,7 @@ MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting wi
 **Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7989108)
 
 **Meeting Videos**: All meeting videos can be found in https://archive.org/
+
 [Alameda](https://archive.org/details/meetingbank-alameda), [Boston](https://archive.org/details/meetingbank-boston), [Denver](https://archive.org/details/meetingbank-denver), [Long Beach](https://archive.org/details/meetingbank-long-beach) ,[King County](https://archive.org/details/meetingbank-king-county), [Seattle](https://archive.org/details/meetingbank-seattle)
 
 

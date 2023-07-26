@@ -135,6 +135,7 @@ where “confidence” indicates the STT confidence in the prediction, “durati
 
 
 **Videos**: Meeting videos can be found and downloaded at https://archive.org/
+
 [Alameda](https://archive.org/details/meetingbank-alameda), [Boston](https://archive.org/details/meetingbank-boston), [Denver](https://archive.org/details/meetingbank-denver), [Long Beach](https://archive.org/details/meetingbank-long-beach) ,[King County](https://archive.org/details/meetingbank-king-county), [Seattle](https://archive.org/details/meetingbank-seattle)
 
 <p align="center">
