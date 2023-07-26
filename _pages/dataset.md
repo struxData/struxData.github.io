@@ -131,10 +131,12 @@ Each word in the transcript is annotated as a dictionary:
 where “confidence” indicates the STT confidence in the prediction, “duration” (unit:microsecond or 1e-6 second) is the duration of the transcribed word, “offset” (unit:microsecond or 1e-6 second) is the start time of the transcribed word in the full-length recording.
 
 #### 6. Multi-media Resources
-**Audios**: Meeting audios are distributed using mp3 format at https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio
+**Audios**: Meeting audios are distributed using mp3 format at [HuggingFace Dataset](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio)
 
 
 **Videos**: Meeting videos can be found and downloaded at https://archive.org/
+[Alameda](https://archive.org/details/meetingbank-alameda), [Boston](https://archive.org/details/meetingbank-boston), [Denver](https://archive.org/details/meetingbank-denver), [Long Beach](https://archive.org/details/meetingbank-long-beach) ,[King County](https://archive.org/details/meetingbank-king-county), [Seattle](https://archive.org/details/meetingbank-seattle)
+
 <p align="center">
     <img src="/assets/alameda.png" alt="interface" width="760">
       <br>
