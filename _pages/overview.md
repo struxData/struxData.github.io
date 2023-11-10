@@ -21,7 +21,6 @@ Please cite the following paper in work that makes use of this dataset:
 Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
 In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
 
-
 ## Bibtex
 ```
 @inproceedings{hu-etal-2023-meetingbank,
@@ -35,17 +34,29 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 }
 ```
 
-## Resources
+## Usage
+```python
+from datasets import load_dataset
+meetingbank = load_dataset("huuuyeah/meetingbank")
+
+train_data = meetingbank['train']
+test_data = meetingbank['test']
+val_data = meetingbank['validation']
+
+def generator(data_split):
+  for instance in data_split:
+    yiled instance['id'], instance['summary'], instance['transcript']
+```
+
+## Multi-media Resources
 
 MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting will be hosted individually on Huggingface. All resources will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
-**Summary, Segments Transcripts and VideoList**: [zenodo](https://zenodo.org/record/7989108)
+**Text & Audio**: [zenodo](https://zenodo.org/record/7989108), Huggingface([splits](https://huggingface.co/datasets/huuuyeah/meetingbank), [audio&transcripts](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio))
 
-**Meeting Videos**: All meeting videos can be found in https://archive.org/
+**Videos**: All meeting videos can be found in https://archive.org/
 
 - [Alameda](https://archive.org/details/meetingbank-alameda), [Boston](https://archive.org/details/meetingbank-boston), [Denver](https://archive.org/details/meetingbank-denver), [Long Beach](https://archive.org/details/meetingbank-long-beach) ,[King County](https://archive.org/details/meetingbank-king-county), [Seattle](https://archive.org/details/meetingbank-seattle)
 
-
-**Meeting Audios**: [HuggingFace Dataset](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio)
-
-Some scripts can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
+**Python Scripts**
+Useful scripts and guidance can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
