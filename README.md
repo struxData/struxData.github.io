@@ -1,16 +1,16 @@
 # MeetingBank:A Benchmark Dataset for Meeting Summarization
 ## Overview
-As the number of recorded meetings increases, it becomes increasingly important to utilize summarization technology to create useful summaries of these recordings. However, there is a crucial lack of annotated meeting corpora for developing this technology, as it can be hard to collect meetings, especially when the topics discussed are confidential. Furthermore, meeting summaries written by experienced writers are scarce, making it hard for abstractive summarizers to produce sensible output without a reliable reference. This lack of annotated corpora has hindered the development of meeting summarization technology. In this paper, we present \emph{MeetingBank}, a new benchmark dataset of city council meetings over the past decade. \emph{MeetingBank} is unique among other meeting corpora due to its divide-and-conquer approach, which involves dividing professionally written meeting minutes into shorter passages and aligning them with specific segments of the meeting. This breaks down the process of summarizing a lengthy meeting into smaller, more manageable tasks. The dataset provides a new testbed of various meeting summarization systems and also allows the public to gain insight into how council decisions are made. We will make the collection, including meeting videos, transcripts, reference summaries, agendas, and other metadata, publicly available in order to facilitate the development of better meeting summarization techniques.
+Countless decisions shape our daily lives, and it is paramount to understand the how and why behind these choices. In this paper, we introduce a new LLM decision-making framework called STRUX, which enhances LLM decision-making by providing structured explanations. These include favorable and adverse facts related to the decision, along with their respective strengths. STRUX begins by distilling lengthy information into a concise table of key facts. It then employs a series of self-reflection steps to determine which of these facts are pivotal, categorizing them as either favorable or adverse in relation to a specific decision. Lastly, we fine-tune an LLM to identify and prioritize these key facts to optimize decision-making. STRUX has been evaluated on the challenging task of forecasting stock investment decisions based on earnings call transcripts and demonstrated superior performance against strong baselines. It enhances decision transparency by allowing users to understand the impact of different factors, representing a meaningful step towards practical decision-making with LLMs.
 
 
 ## Acknowledgement
-Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu
+Yiming Lu, Yebowen Hu, Hassan Foroosh, Wei Jin, Fei Liu
 
-In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
+In main conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL'25), Albuquerque, US.
 
 
 ## Dataset
-Dataset preprocessing and results reproduce utilities code repository: [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank)
+Dataset preprocessing and results reproduce utilities code repository: [Strux Utils](https://github.com/Builderlym)
 
 ## License
 
