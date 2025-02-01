@@ -10,27 +10,24 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 ## Overview
+Countless decisions shape our daily lives, and it is paramount to understand the how and why behind these choices. In this paper, we introduce a new LLM decision-making framework called STRUX, which enhances LLM decision-making by providing structured explanations. These include favorable and adverse facts related to the decision, along with their respective strengths. STRUX begins by distilling lengthy information into a concise table of key facts. It then employs a series of self-reflection steps to determine which of these facts are pivotal, categorizing them as either favorable or adverse in relation to a specific decision. Lastly, we fine-tune an LLM to identify and prioritize these key facts to optimize decision-making. STRUX has been evaluated on the challenging task of forecasting stock investment decisions based on earnings call transcripts and demonstrated superior performance against strong baselines. It enhances decision transparency by allowing users to understand the impact of different factors, representing a meaningful step towards practical decision-making with LLMs.
 
-MeetingBank, a benchmark dataset created from the city councils of 6 major U.S. cities to supplement existing datasets. It contains 1,366 meetings with over 3,579 hours of video, as well as transcripts, PDF documents of meeting minutes, agenda, and other metadata. On average, a council meeting is 2.6 hours long and its transcript contains over 28k tokens, making it a valuable testbed for meeting summarizers and for extracting structure from meeting videos. The datasets contains 6,892 segment-level summarization instances for training and evaluating of performance. 
 
 ## Acknowledgement
 
 Please cite the following paper in work that makes use of this dataset:
 
-[MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)\
-Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
-In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
+[STRUX: An LLM for Decision-Making with Structured Explanations](https://arxiv.org/abs/2410.12583)\
+Yiming Lu, Yebowen Hu, Hassan Foroosh, Wei Jin, Fei Liu\
+In main conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL'25), Albuquerque, US.
 
 ## Bibtex
 ```
-@inproceedings{hu-etal-2023-meetingbank,
-    title = "MeetingBank: A Benchmark Dataset for Meeting Summarization",
-    author = "Yebowen Hu and Tim Ganter and Hanieh Deilamsalehy and Franck Dernoncourt and Hassan Foroosh and Fei Liu",
-    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
-    month = July,
-    year = "2023",
-    address = "Toronto, Canada",
-    publisher = "Association for Computational Linguistics",
+@article{lu2024strux,
+  title={STRUX: An LLM for Decision-Making with Structured Explanations},
+  author={Lu, Yiming and Hu, Yebowen and Foroosh, Hassan and Jin, Wei and Liu, Fei},
+  journal={arXiv preprint arXiv:2410.12583},
+  year={2024}
 }
 ```
 
