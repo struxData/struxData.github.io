@@ -43,15 +43,5 @@ def generator(data_split):
     yiled instance['ticker'], instance['date'], instance['participants'], instance['prepared_remarks'], instance['questions_and_answers']
 ```
 
-## Multi-media Resources
-
-MeetingBank dataset will be hosted at Zenodo. The audio files of each meeting will be hosted individually on Huggingface. All resources will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
-
-**Text & Audio**: [zenodo](https://zenodo.org/record/7989108), Huggingface([splits](https://huggingface.co/datasets/huuuyeah/meetingbank), [audio&transcripts](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio))
-
-**Videos**: All meeting videos can be found in https://archive.org/
-
-- [Alameda](https://archive.org/details/meetingbank-alameda), [Boston](https://archive.org/details/meetingbank-boston), [Denver](https://archive.org/details/meetingbank-denver), [Long Beach](https://archive.org/details/meetingbank-long-beach) ,[King County](https://archive.org/details/meetingbank-king-county), [Seattle](https://archive.org/details/meetingbank-seattle)
-
 **Python Scripts**
 Useful scripts and guidance can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
