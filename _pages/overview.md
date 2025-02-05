@@ -33,15 +33,14 @@ In main conference of the Nations of the Americas Chapter of the Association for
 ## Usage
 ```python
 from datasets import load_dataset
-meetingbank = load_dataset("huuuyeah/meetingbank")
+transcripts = load_dataset("BUILDERlym/STRUX-Transcripts")
 
-train_data = meetingbank['train']
-test_data = meetingbank['test']
-val_data = meetingbank['validation']
+train_data = transcripts['train']
+test_data = transcripts['test']
 
 def generator(data_split):
   for instance in data_split:
-    yiled instance['id'], instance['summary'], instance['transcript']
+    yiled instance['ticker'], instance['date'], instance['participants'], instance['prepared_remarks'], instance['questions_and_answers']
 ```
 
 ## Multi-media Resources
