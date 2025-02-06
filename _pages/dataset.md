@@ -1,4 +1,4 @@
-<img width="967" alt="image" src="https://github.com/user-attachments/assets/49c2a64e-b3fe-430b-a207-ebe107a0ee5d" />---
+---
 layout: page
 permalink: /dataset/
 title: Dataset
