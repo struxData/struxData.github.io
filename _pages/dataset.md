@@ -1,4 +1,4 @@
----
+<img width="967" alt="image" src="https://github.com/user-attachments/assets/49c2a64e-b3fe-430b-a207-ebe107a0ee5d" />---
 layout: page
 permalink: /dataset/
 title: Dataset
@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 ## Public Meetings
-The release MeetingBank dataset includes 1,366 meetings from six cities or municipalities spanning over a decade, including [Seattle, Washington](https://seattle.legistar.com/Calendar.aspx); [King County, Washington](https://mkcclegisearch.kingcounty.gov/Calendar.aspx); [Denver, Colorado](https://denver.legistar.com/Calendar.aspx); [Boston, Massachusetts](https://boston.legistar.com/Calendar.aspx); [Alameda, California](https://alameda.legistar.com/Calendar.aspx); and [Long Beach, California](https://longbeach.legistar.com/DepartmentDetail.aspx?ID=2474&GUID=28A20A62-2645-436E-B1E5-1D5D9B9D25EB&Mode=MainBody).
+A collection of 11,950 quarterly earnings call transcripts from major NASDAQ 500 and S&P 500 companies (2017–2024), each averaging about 10,187 tokens. It spans 869 companies across 11 financial sectors, with a balanced training subset of 1,100 transcripts and a 2024 test set of 587. Ground‐truth investment labels (Strongly Buy, Buy, Hold, Sell, Strongly Sell) are assigned based on 30‐day post‐earnings stock performance. This text‐only dataset serves as a robust resource for investment decision making, planning, and broader NLP research.
 
 ## Dataset
 ```
