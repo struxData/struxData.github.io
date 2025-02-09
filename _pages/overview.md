@@ -44,4 +44,4 @@ def generator(data_split):
 ```
 
 **Python Scripts**
-Useful scripts and guidance can be found in github repo [MeetingBank_Utils](https://github.com/YebowenHu/MeetingBank-utils)
+Useful scripts and guidance can be found in github repo [STRUX](https://github.com/BUILDERlym/STRUX)
