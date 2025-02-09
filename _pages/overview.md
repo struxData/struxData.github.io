@@ -40,7 +40,7 @@ test_data = transcripts['test']
 
 def generator(data_split):
   for instance in data_split:
-    yiled instance['ticker'], instance['date'], instance['participants'], instance['prepared_remarks'], instance['questions_and_answers']
+    yield instance['ticker'], instance['date'], instance['participants'], instance['prepared_remarks'], instance['questions_and_answers']
 ```
 
 **Python Scripts**
