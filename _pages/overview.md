@@ -14,7 +14,7 @@ Our dataset consists of 11,950 quarterly earnings call transcripts from major co
 
 ## Acknowledgement
 
-Please cite the following paper in work that makes use of this dataset:
+If you use this dataset, please cite the following paper:
 
 [STRUX: An LLM for Decision-Making with Structured Explanations](https://arxiv.org/abs/2410.12583)\
 Yiming Lu, Yebowen Hu, Hassan Foroosh, Wei Jin, Fei Liu\
