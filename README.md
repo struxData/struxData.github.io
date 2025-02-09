@@ -6,7 +6,7 @@ Countless decisions shape our daily lives, and it is paramount to understand the
 ## Acknowledgement
 Yiming Lu, Yebowen Hu, Hassan Foroosh, Wei Jin, Fei Liu
 
-In main conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL'25), Albuquerque, US.
+In Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025), Main Conference
 
 
 ## Dataset
